@@ -1,0 +1,166 @@
+@import "tailwindcss"; 
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="checkbox"] {
+  background-color: transparent !important;
+  background: transparent !important;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #8B5E3B;
+  border-radius: 2px;
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '\2714'; /* bifa */
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  color: #8B5E3B;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a.user-menu{
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+}
+
+
+/* a.user-menu:hover {
+  color: #D7BFA8;
+} */
+
+a.back
+{
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #D7BFA8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+button.search{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+button.mobile-menu{
+  background-color: transparent;
+  width: 5%;
+
+}
+
+button {
+  border-radius: 8px;
+  /* border: 1px solid transparent; */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  /* background-color: #313131; */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+motion.button:focus,
+motion.button:hover,
+motion.button {
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  
+}
+
+/* Ascunde bara de scroll pentru Webkit (Chrome, Safari) */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ascunde bara de scroll pentru Firefox */
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+/* Ascunde bara de scroll pentru Edge și IE */
+.scrollbar-none {
+  -ms-overflow-style: none;
+}
+
+
+/* .motion.button:hover,
+button.motion:hover,
+.motion button:hover {
+  background-color: transparent;
+  outline : none !important;
+  border: none !important;
+} */
+
+
+button:hover {
+  border-color: #D7BFA8;
+}
+button:focus,
+button:focus-visible {
+  outline: 0.1px auto -webkit-focus-ring-color;
+  border: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
